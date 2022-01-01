@@ -1,11 +1,11 @@
 <div class="pt-0">
-    <footer id="footer" class="relative z-50 bg-sky-900 px-0 lg:px-0">
+    <footer id="footer" class="relative z-10 bg-sky-900 px-0 lg:px-0">
         <div tabindex="0" aria-label="footer" class="focus:outline-none py-3 lg:py-16">
             <div class="max-w-7xl mx-auto py-4 px-3 lg:px-8">
                 <div class="lg:flex">
                     <div class="lg:w-1/3">
                         <div class="w-full lg:w-full">
-                            <img class="w-80" src="{{ asset('img/logo_small.png') }}" alt="logo">
+                            <img class="w-80 ml-5" src="{{ asset('img/logo_mediano_sin_fondo.png') }}" alt="logo">
                             <p class="text-white pl-4 pr-6 mt-6 text-base text-justify">Trabajamos junto al cliente en el diseño e implementación de la solución más adecuada y que mejor se ajuste a sus requerimientos y presupuesto.</p>
                         </div>
                     </div>
@@ -51,7 +51,7 @@
             </div>
         </div>
         <div class="py-0 flex flex-col justify-center items-center border-t border-gray-200">
-            <p tabindex="0" class="focus:outline-none py-2 text-xs lg:text-sm leading-none text-white dark:text-gray-50">2021 Giovanni.  Todos los derechos reservados.</p>
+            <p tabindex="0" class="focus:outline-none py-2 text-xs lg:text-sm leading-none text-white dark:text-gray-50">{{ date('Y') }} © servicioselectronicos.sl, todos los derechos reservados. Giovanni</p>
         </div>
     </footer>
 </div>

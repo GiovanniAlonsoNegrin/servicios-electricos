@@ -31,8 +31,8 @@
             <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 {{-- logotipo --}}
                 <a href="{{ route('frontend.index') }}" class="flex-shrink-0 flex items-center">
-                    <img class="block lg:hidden h-12 w-40 ml-10" src="{{ asset('img/logo_small.png') }}" alt="Servicio electricos">
-                    <img class="hidden lg:block h-14 w-64" src="{{ asset('img/logo_small.png') }}" alt="Servicios electricos">
+                    <img class="block lg:hidden h-12 w-50 ml-10" src="{{ asset('img/logo_mediano_sin_fondo.png') }}" alt="Servicio electricos">
+                    <img class="hidden lg:block h-14 w-64" src="{{ asset('img/logo_mediano_sin_fondo.png') }}" alt="Servicios electricos">
                 </a>
                 {{-- menu lg --}}
                 <div class="hidden sm:block sm:ml-6 mt-2">
@@ -78,13 +78,12 @@
                             From: "transform opacity-100 scale-100"
                             To: "transform opacity-0 scale-95"
                         -->
-                        <div id="myProfile" class="hidden origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
+                        <div id="myProfile" class="hidden origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-50" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
                             <!-- Active: "bg-gray-100", Not Active: "" -->
                             <a href="{{ route('profile.show') }}" class="block px-4 py-2 text-md text-gray-700 hover:bg-gray-50" role="menuitem" tabindex="-1" id="user-menu-item-0">Perfil</a>
                             <form method="POST" action="{{ route('logout') }}">
                                 @csrf
-                                <a href="{{ route('logout') }}" class="block px-4 py-2 text-md text-gray-700 hover:bg-gray-50" role="menuitem" tabindex="-1" id="user-menu-item-2" onclick="event.preventDefault();
-                                                this.closest('form').submit();">
+                                <a href="{{ route('logout') }}" class="block px-4 py-2 text-md text-gray-700 hover:bg-gray-50" role="menuitem" tabindex="-1" id="user-menu-item-2" onclick="event.preventDefault(); this.closest('form').submit();">
                                     Salir
                                 </a>
                             </form>

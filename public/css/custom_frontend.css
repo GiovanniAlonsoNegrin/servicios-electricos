@@ -8,3 +8,17 @@
 .myHeight{
     height: 40rem;
 }
+
+.mySecondHeight{
+    height: 50rem;
+}
+
+.myMove{
+    transition: all 500ms ease;
+}
+
+@media (max-width: 450px){
+    .mySecondHeight{
+        height: max-content;
+    }
+}

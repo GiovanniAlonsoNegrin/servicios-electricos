@@ -1,4 +1,6 @@
 @extends('frontend.master')
 @section('body')
-<p>About</p>
+<div class="bg-sky-200">
+    <p>About</p>
+</div>
 @endsection
