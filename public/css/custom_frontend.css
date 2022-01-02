@@ -5,20 +5,74 @@
     background-position: center;
 }
 
+.myFooterBackground{
+    background-image: url("../img/footer_background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.myIndexHeight{
+    height: 40rem;
+}
+
 .myHeight{
     height: 40rem;
 }
 
-.mySecondHeight{
-    height: 50rem;
+.myServicesBackground{
+    background-image: url("../img/servicios/services_background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
 }
+
+.myServicesImgWidth{
+    width: 30rem;
+}
+
+.mySecondHeight{
+    height: 39rem;
+}
+
 
 .myMove{
     transition: all 500ms ease;
 }
 
+.my-position{
+    left: 33.4rem;
+    top: 8rem;
+}
+
+.myLoadingLogo{
+    animation-name: opacity;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes opacity {
+    0% {
+        /*opacity: 0;*/
+        transform: rotate(0deg);
+    }
+    100% {
+        /*opacity: 1;*/
+        transform: rotate(360deg);
+    }
+}
+
 @media (max-width: 450px){
+    .myHeight{
+        height: 20rem;
+    }
+
     .mySecondHeight{
         height: max-content;
+    }
+
+    .myContactIcons{
+        left: 7.5rem;
     }
 }

@@ -2,14 +2,14 @@
 @section('body')
     <div class="relative">
         <!-- Button -->
-        <div id="scrollButton" class="hidden mr-2 bg-sky-500 hover:bg-sky-700 bottom-10 right-0 h-16 w-16 fixed z-50 rounded-full border-2 border-sky-800 cursor-pointer">
+        <div id="scrollButton" class="hidden mr-2 bg-sky-700 hover:bg-sky-600 bottom-10 right-0 h-16 w-16 fixed z-50 rounded-full border-2 border-sky-800 cursor-pointer">
             <div class="mx-auto text-center mt-3">
                 <i class="fas fa-chevron-up fa-2x hover:text-white"></i>
             </div>
         </div>
         <!-- End button -->
         <!-- Section one -->
-        <div class="myBackground myHeight">
+        <div class="myBackground myIndexHeight">
             <div class="max-w-7xl mx-auto px-2 py-1 lg:py-4 sm:px-6 lg:px-8">
                 <div class="lg:w-1/2 float-left">
                     <div class="w-full lg:w-full mt-4 lg:mt-10">
@@ -29,50 +29,67 @@
         </div>
         <!-- End section one -->
         <!-- Section services -->
-        <div class="bg-sky-200 py-5 mySecondHeight">
-            <div class="max-w-7xl mx-auto px-2 py-1 lg:py-4 sm:px-6 lg:px-8">
-                <div class="bg-sky-700 rounded w-full h-10 flex items-center justify-center">
-                    <h1 class="text-gray-900 text-lg lg:text-2xl font-semibold">Contamos con el mejor servicio</h1>
-                </div>
+        <div class="py-5 mySecondHeight myServicesBackground">
+            <div class="w-full mx-auto px-2 py-1 lg:py-4 sm:px-6 lg:px-8">
+{{--                <div class="w-full h-10 flex items-center justify-center">--}}
+{{--                    <h1 class="text-blue-700 text-lg lg:text-4xl font-semibold">Contamos con el mejor servicio</h1>--}}
+{{--                </div>--}}
                 <a href="{{ route('frontend.services') }}">
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
-                        <div id="boxOne" class="mt-10 rounded">
-                            <div class="w-full px-4 py-1 rounded bg-sky-700">
-                                <ul class="py-3">
-                                    <li>
-                                        <h1 class="text-gray-900 text-lg text-justify font-bold">Estudio de Redes Digitales de Radiocomunicación</h1>
-                                        <p class="text-white font-thin">Trabajamos con las mejores herramientas para estar al día, siempre poniendo el máximo empeño en nuestra actividad.</p>
-                                    </li>
-                                    <li>
-                                        <h1 class="text-gray-900 text-lg text-justify font-bold mt-1">Diseño de Redes Digitales de Radiocomunicación</h1>
-                                        <p class="text-white font-thin">Trabajamos con las mejores herramientas para estar al día, siempre poniendo el máximo empeño en nuestra actividad.</p>
-                                    </li>
-                                    <li>
-                                        <h1 class="text-gray-900 text-lg text-justify font-bold mt-1">Implementación de Redes Digitales de Radiocomunicación</h1>
-                                        <p class="text-white font-thin">Trabajamos con las mejores herramientas para estar al día, siempre poniendo el máximo empeño en nuestra actividad.</p>
-                                    </li>
-                                    <li>
-                                        <h1 class="text-gray-900 text-lg text-justify font-bold mt-1">Consultoría de Telecomunicaciones</h1>
-                                        <p class="text-white font-thin">Trabajamos con las mejores herramientas para estar al día, siempre poniendo el máximo empeño en nuestra actividad.</p>
-                                    </li>
-                                    <li>
-                                        <h1 class="text-gray-900 text-lg text-justify font-bold mt-1">Diseño de Vehículos Especiales</h1>
-                                        <p class="text-white font-thin">Trabajamos con las mejores herramientas para estar al día, siempre poniendo el máximo empeño en nuestra actividad.</p>
-                                    </li>
-                                    <li>
-                                        <h1 class="text-gray-900 text-lg text-justify font-bold mt-1">Instalación de Vehículos Especiales</h1>
-                                        <p class="text-white font-thin">Trabajamos con las mejores herramientas para estar al día, siempre poniendo el máximo empeño en nuestra actividad.</p>
-                                    </li>
-                                    <li>
-                                        <h1 class="text-gray-900 text-lg text-justify font-bold mt-1">Equipamiento de Vehículos Especiales</h1>
-                                        <p class="text-white font-thin">Trabajamos con las mejores herramientas para estar al día, siempre poniendo el máximo empeño en nuestra actividad.</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
                         <div id="boxTwo" class="mt-10 rounded">
                             <div class="w-full">
-                                <img id="boxTwo" class="object-cover rounded" src="{{ asset('img/servicios.png') }}" alt="fachada">
+                                <img id="boxTwo" class="object-cover rounded myServicesImgWidth mt-20 2xl:mt-12" src="{{ asset('img/servicios/servicios.png') }}" alt="servicios">
+                            </div>
+                        </div>
+                        <div id="boxOne" class="mt-10 rounded col-span-2">
+                            <div class="w-full px-4 py-1 rounded">
+                                <p class="text-blue-700 text-lg font-bold">¿Por qué elegirnos?</p>
+                                <h1 class="text-gray-900 text-2xl lg:text-4xl mt-4 text-justify">Brindamos soluciones de TI verdaderamente destacadas para su éxito</h1>
+                                <div class="mt-10">
+                                    <div class="flex flex-col lg:flex-row mt-10 lg:mt-5">
+                                        <div class="basis-1/2 flex flex-row">
+                                            <div class="basis-14">
+                                                <img class="mt-2" src="{{ asset('img/servicios/features-1.png') }}" alt="equipo">
+                                            </div>
+                                            <div class="basis-4/5 ml-4">
+                                                <h1 class="text-2xl">Un Equipo Experto</h1>
+                                                <p class="text-lg">Acelere la innovación con el mejor equipo tecnológico.</p>
+                                            </div>
+                                        </div>
+                                        <div class="basis-1/2 flex flex-row mt-10 lg:mt-0">
+                                            <div class="basis-14">
+                                                <img class="mt-2" src="{{ asset('img/servicios/features-2.png') }}" alt="equipo">
+                                            </div>
+                                            <div class="basis-4/5 ml-4">
+                                                <h1 class="text-2xl">Control de calidad</h1>
+                                                <p class="text-lg">Contamos con certificaciones de calidad ISO.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col lg:flex-row mt-10">
+                                        <div class="basis-1/2 flex flex-row">
+                                            <div class="basis-14">
+                                                <img class="mt-2" src="{{ asset('img/servicios/features-3.png') }}" alt="equipo">
+                                            </div>
+                                            <div class="basis-4/5 ml-4">
+                                                <h1 class="text-2xl">Integración</h1>
+                                                <p class="text-lg">Siempre a la última, actualizados y al día.</p>
+                                            </div>
+                                        </div>
+                                        <div class="basis-1/2 flex flex-row mt-10 lg:mt-0">
+                                            <div class="basis-14">
+                                                <img class="mt-2" src="{{ asset('img/servicios/features-4.png') }}" alt="equipo">
+                                            </div>
+                                            <div class="basis-4/5 ml-4">
+                                                <h1 class="text-2xl">Soporte</h1>
+                                                <p class="text-lg">Contamos con la mejor atención al cliente.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-10 mb-10">
+                                    <p class="text-lg">Esto es solo un vistazo, vea <a class="text-blue-700 underline" href="{{ route('frontend.services') }}">todas las características</a> de nuestro servicio.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -81,7 +98,7 @@
         </div>
         <!-- End ection services -->
         <!-- Section brands -->
-        <div class="bg-sky-300 py-5">
+        <div class="py-5">
             <div class="max-w-7xl mx-auto px-2 py-1 lg:py-4 sm:px-6 lg:px-8">
                 <div class="bg-sky-700 rounded w-full h-10 flex items-center justify-center">
                     <h1 class="text-white text-lg lg:text-2xl font-semibold">Usamos las mejores marcas</h1>

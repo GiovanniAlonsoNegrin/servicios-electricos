@@ -1,4 +1,4 @@
-<nav class="bg-sky-900">
+<nav class="bg-sky-100">
     <div class="max-w-7xl mx-auto px-2 py-4 sm:px-6 lg:px-8">
         <div class="relative flex items-center justify-between h-16">
             <!-- Mobile menu button-->
@@ -35,16 +35,37 @@
                     <img class="hidden lg:block h-14 w-64" src="{{ asset('img/logo_mediano_sin_fondo.png') }}" alt="Servicios electricos">
                 </a>
                 {{-- menu lg --}}
-                <div class="hidden sm:block sm:ml-6 mt-2">
-                    <div class="flex space-x-4">
+                <div class="hidden sm:block sm:ml-6 mt-1.5">
+                    <div class="flex space-x-4 mt-2">
                         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                        <a href="{{ route('frontend.index') }}" class="{{ request()->routeIs('frontend.index') ? 'bg-sky-800 text-white' : 'text-gray-300' }} hover:bg-sky-700 hover:text-white px-3 py-2 rounded-md text-lg font-medium" aria-current="page">Inicio</a>
+                        <div>
+                            <a href="{{ route('frontend.index') }}" class="{{ request()->routeIs('frontend.index') ? 'text-sky-900' : 'text-gary-900' }} hover:text-sky-900 px-3 py-2 rounded-md text-lg font-medium" aria-current="page">Inicio</a>
+                            @if(request()->routeIs('frontend.index'))
+                                <div class="w-100 h-1 bg-sky-900"></div>
+                            @endif
+                        </div>
 
-                        <a href="{{ route('frontend.about') }}" class="{{ request()->routeIs('frontend.about') ? 'bg-sky-800 text-white' : 'text-gray-300' }} hover:bg-sky-700 hover:text-white px-3 py-2 rounded-md text-lg font-medium">Conócenos</a>
+                        <div>
+                            <a href="{{ route('frontend.about') }}" class="{{ request()->routeIs('frontend.about') ? 'text-sky-900' : 'text-gray-900' }}  hover:text-sky-900 px-3 py-2 rounded-md text-lg font-medium">Conócenos</a>
+                            @if(request()->routeIs('frontend.about'))
+                                <div class="w-100 h-1 bg-sky-900"></div>
+                            @endif
+                        </div>
 
-                        <a href="{{ route('frontend.services') }}" class="{{ request()->routeIs('frontend.services') ? 'bg-sky-800 text-white' : 'text-gray-300' }} hover:bg-sky-700 hover:text-white px-3 py-2 rounded-md text-lg font-medium">Servicios</a>
+                        <div>
+                            <a href="{{ route('frontend.services') }}" class="{{ request()->routeIs('frontend.services') ? 'text-sky-900' : 'text-gray-900' }}  hover:text-sky-900 px-3 py-2 rounded-md text-lg font-medium">Servicios</a>
+                            @if(request()->routeIs('frontend.services'))
+                                <div class="w-100 h-1 bg-sky-900"></div>
+                            @endif
+                        </div>
 
-                        <a href="{{ route('frontend.contact') }}" class="{{ request()->routeIs('frontend.contact') ? 'bg-sky-800 text-white' : 'text-gray-300' }} hover:bg-sky-700 hover:text-white px-3 py-2 rounded-md text-lg font-medium">Contacto</a>
+                        <div>
+                            <a href="{{ route('frontend.contact') }}" class="{{ request()->routeIs('frontend.contact') ? 'text-sky-900' : 'text-gray-900' }}  hover:text-sky-900 px-3 py-2 rounded-md text-lg font-medium">Contacto</a>
+                            @if(request()->routeIs('frontend.contact'))
+                                <div class="w-100 h-1 bg-sky-900"></div>
+                            @endif
+                        </div>
+
 
                     </div>
                 </div>
@@ -92,7 +113,7 @@
                 </div>
             @else
                 <div>
-                    <a href="{{ route('login') }}" class="text-gray-300 px-3 py-2 rounded-md text-lg font-medium"><i class="fas fa-sign-in-alt text-gray-300 hover:text-white fa-lg"></i></a>
+                    <a href="{{ route('login') }}" class="text-gray-300 px-3 py-2 rounded-md text-lg font-medium"><i class="fas fa-sign-in-alt text-gray-900 hover:text-sky-900 fa-lg"></i></a>
 {{--                    <a href="{{ route('register') }}" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-lg font-medium">Registrarse</a>--}}
                 </div>
             @endauth

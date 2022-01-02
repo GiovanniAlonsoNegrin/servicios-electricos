@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="stylesheet" href="{{ asset('css/custom_frontend.css') }}">
 
-    @section('css')
-    @show
+    @section('css')@show
+    @stack('css')
     @livewireStyles
 
 </head>
@@ -28,7 +28,11 @@
     {{--js--}}
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="/js/main.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     @livewireScripts
     @section('js')@show
+    {{-- Leer js de livewire --}}
+    @stack('js')
 </body>
 </html>

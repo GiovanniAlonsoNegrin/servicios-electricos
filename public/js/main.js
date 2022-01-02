@@ -60,16 +60,16 @@ $( document ).ready(function() {
         }, 300)
     });
 
-    $('#boxTwo').on('mouseenter', function(){
-        $('#boxTwo').animate({
-            marginTop: "-=10",
-        }, 300)
-    });
-    $('#boxTwo').on('mouseleave', function(){
-        $('#boxTwo').animate({
-            marginTop: "+=10",
-        }, 300)
-    });
+    // $('#boxTwo').on('mouseenter', function(){
+    //     $('#boxTwo').animate({
+    //         marginTop: "-=10",
+    //     }, 300)
+    // });
+    // $('#boxTwo').on('mouseleave', function(){
+    //     $('#boxTwo').animate({
+    //         marginTop: "+=10",
+    //     }, 300)
+    // });
     //END SERVICES SECTION
 });
 

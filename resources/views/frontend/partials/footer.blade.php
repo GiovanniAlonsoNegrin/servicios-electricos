@@ -1,5 +1,5 @@
 <div class="pt-0">
-    <footer id="footer" class="relative z-10 bg-sky-900 px-0 lg:px-0">
+    <footer id="footer" class="relative z-10 myFooterBackground px-0 lg:px-0">
         <div tabindex="0" aria-label="footer" class="focus:outline-none py-3 lg:py-16">
             <div class="max-w-7xl mx-auto py-4 px-3 lg:px-8">
                 <div class="lg:flex">
