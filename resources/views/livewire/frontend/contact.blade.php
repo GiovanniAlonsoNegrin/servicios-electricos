@@ -1,7 +1,7 @@
 <div>
     <div wire:loading class="absolute my-position">
-        <img class="w-32 myLoadingLogo"
-             src="{{ asset('img/icono.png') }}"
+        <img class="w-52 myLoadingLogo"
+             src="{{ asset('img/icono_loading.png') }}"
              alt="icono">
     </div>
     <div class="mb-4">
@@ -51,7 +51,7 @@
                    wire:model.defer="policies"
                    required>
             <label for="polices" class="text-gray-900 mt-0.5 ml-1">
-                Aceptar las condiciones de nuestra política de privacidad de datos.
+                Aceptar las condiciones de nuestra <a href="javascript:void(0)" class="text-blue-700 hover:underline">política de privacidad</a> de datos.
             </label>
         </div>
         <div>
@@ -78,11 +78,11 @@
             })
 
             swalWithBootstrapButtons.fire({
-                background: '#bae6fd',
+                background: '#fff',
                 icon: 'success',
                 text: 'Tu mensaje se ha enviado con éxito',
                 confirmButtonText: 'Entendido',
-                confirmButtonClass: 'inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-lg font-medium rounded-full text-white bg-sky-500 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-900 mt-1',
+                confirmButtonClass: 'inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-lg font-medium rounded-full text-white bg-blue-700 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-sky-900 mt-1',
             })
         });
     </script>

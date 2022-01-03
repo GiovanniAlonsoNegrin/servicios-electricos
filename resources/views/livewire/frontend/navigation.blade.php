@@ -4,7 +4,7 @@
             <!-- Mobile menu button-->
             <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
 
-                <button id="menuButtonMobile" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                <button id="menuButtonMobile" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-900 hover:text-white hover:bg-sky-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
                     <!--
                       Icon when menu is closed.
@@ -41,28 +41,28 @@
                         <div>
                             <a href="{{ route('frontend.index') }}" class="{{ request()->routeIs('frontend.index') ? 'text-sky-900' : 'text-gary-900' }} hover:text-sky-900 px-3 py-2 rounded-md text-lg font-medium" aria-current="page">Inicio</a>
                             @if(request()->routeIs('frontend.index'))
-                                <div class="w-100 h-1 bg-sky-900"></div>
+                                <div class="w-100 h-0.5 bg-sky-900"></div>
                             @endif
                         </div>
 
                         <div>
                             <a href="{{ route('frontend.about') }}" class="{{ request()->routeIs('frontend.about') ? 'text-sky-900' : 'text-gray-900' }}  hover:text-sky-900 px-3 py-2 rounded-md text-lg font-medium">Conócenos</a>
                             @if(request()->routeIs('frontend.about'))
-                                <div class="w-100 h-1 bg-sky-900"></div>
+                                <div class="w-100 h-0.5 bg-sky-900"></div>
                             @endif
                         </div>
 
                         <div>
                             <a href="{{ route('frontend.services') }}" class="{{ request()->routeIs('frontend.services') ? 'text-sky-900' : 'text-gray-900' }}  hover:text-sky-900 px-3 py-2 rounded-md text-lg font-medium">Servicios</a>
                             @if(request()->routeIs('frontend.services'))
-                                <div class="w-100 h-1 bg-sky-900"></div>
+                                <div class="w-100 h-0.5 bg-sky-900"></div>
                             @endif
                         </div>
 
                         <div>
                             <a href="{{ route('frontend.contact') }}" class="{{ request()->routeIs('frontend.contact') ? 'text-sky-900' : 'text-gray-900' }}  hover:text-sky-900 px-3 py-2 rounded-md text-lg font-medium">Contacto</a>
                             @if(request()->routeIs('frontend.contact'))
-                                <div class="w-100 h-1 bg-sky-900"></div>
+                                <div class="w-100 h-0.5 bg-sky-900"></div>
                             @endif
                         </div>
 
@@ -113,7 +113,7 @@
                 </div>
             @else
                 <div>
-                    <a href="{{ route('login') }}" class="text-gray-300 px-3 py-2 rounded-md text-lg font-medium"><i class="fas fa-sign-in-alt text-gray-900 hover:text-sky-900 fa-lg"></i></a>
+                    <a href="{{ route('login') }}" class="text-gray-300 px-3 py-2 rounded-md text-lg font-medium hidden"><i class="fas fa-sign-in-alt text-gray-900 hover:text-sky-900 fa-lg"></i></a>
 {{--                    <a href="{{ route('register') }}" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-lg font-medium">Registrarse</a>--}}
                 </div>
             @endauth
@@ -124,13 +124,26 @@
     <div class="sm:hidden hidden" id="mobile-menu">
         <div class="px-2 pt-2 pb-3 space-y-1">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-            <a href="{{ route('frontend.index') }}" class="{{ request()->routeIs('frontend.index') ? 'bg-gray-900 text-white' : 'text-gray-300' }}  block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Inicio</a>
+            <a href="{{ route('frontend.index') }}" class="{{ request()->routeIs('frontend.index') ? 'text-sky-900 text-white' : 'text-gray-900' }}  block px-3 py-2 rounded-md text-lg font-medium" aria-current="page">Inicio</a>
+            @if(request()->routeIs('frontend.index'))
+                <div class="w-16 ml-1 h-0.5 bg-sky-900"></div>
+            @endif
 
-            <a href="{{ route('frontend.about') }}" class="{{ request()->routeIs('frontend.about') ? 'bg-gray-900 text-white' : 'text-gray-300' }} block px-3 py-2 rounded-md text-base font-medium">Conócenos</a>
+            <a href="{{ route('frontend.about') }}" class="{{ request()->routeIs('frontend.about') ? 'text-sky-900 text-white' : 'text-gray-900' }} block px-3 py-2 rounded-md text-lg font-medium">Conócenos</a>
+            @if(request()->routeIs('frontend.about'))
+                <div class="w-28 ml-1 h-0.5 bg-sky-900"></div>
+            @endif
 
-            <a href="{{ route('frontend.services') }}" class="{{ request()->routeIs('frontend.services') ? 'bg-gray-900 text-white' : 'text-gray-300' }} block px-3 py-2 rounded-md text-base font-medium">Servicios</a>
+            <a href="{{ route('frontend.services') }}" class="{{ request()->routeIs('frontend.services') ? 'text-sky-900 text-white' : 'text-gray-900' }} block px-3 py-2 rounded-md text-lg font-medium">Servicios</a>
+            @if(request()->routeIs('frontend.services'))
+                <div class="w-24 ml-1 h-0.5 bg-sky-900"></div>
+            @endif
 
-            <a href="{{ route('frontend.contact') }}" class="{{ request()->routeIs('frontend.contact') ? 'bg-gray-900 text-white' : 'text-gray-300' }} block px-3 py-2 rounded-md text-base font-medium">Contacto</a>
+            <a href="{{ route('frontend.contact') }}" class="{{ request()->routeIs('frontend.contact') ? 'text-sky-900 text-white' : 'text-gray-900' }} block px-3 py-2 rounded-md text-lg font-medium">Contacto</a>
+            @if(request()->routeIs('frontend.contact'))
+                <div class="w-24 ml-1 h-0.5 bg-sky-900"></div>
+            @endif
+
         </div>
     </div>
 </nav>
