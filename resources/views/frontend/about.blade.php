@@ -23,10 +23,10 @@
             <img class="w-full rounded-lg" src="{{ asset('img/fachada.jpg') }}" alt="fachada">
         </div>
         <div class="mt-6 lg:mt-0">
-            <h1 class="text-xl lg:text-3xl font-bold text-gray-900">Somos especialistas en sistemas de comunicación para los servicios de seguridad y atención de emergencias</h1>
-            <p class="mt-2 font-thin text-lg text-gray-900">Servicios Electrónicos, S.L. es una empresa canaria lider en el sector de las Telecomunicaciones y Soluciones Tecnológicas.</p>
-            <p class="mt-2 font-thin text-lg text-gray-900">Estamos especializados en desarrollos de tecnología e integración de sistemas, venta e instalación de equipos y soluciones de Telecomunicaciones. Siendo nuestra principal área de referencia los sistemas de Radiocomunicación y Redes de Banda Ancha.</p>
-            <p class="mt-2 font-thin text-lg text-gray-900">Somos distribuidores de las principales marcas de radiocomunicaciones analógicas, digitales y TETRA como Kenwood, Hytera, Motorola y Sepura, siendo servicio técnico oficial en Canarias de Kenwood Communications desde 1978 y de Hytera y Sepura desde 2014 y 2009.</p>
+            <h1 class="text-xl lg:text-3xl font-bold text-black">Somos especialistas en sistemas de comunicación para los servicios de seguridad y atención de emergencias</h1>
+            <p class="mt-2 text-lg black">Servicios Electrónicos, S.L. es una empresa canaria lider en el sector de las Telecomunicaciones y Soluciones Tecnológicas.</p>
+            <p class="mt-2 text-lg black">Estamos especializados en desarrollos de tecnología e integración de sistemas, venta e instalación de equipos y soluciones de Telecomunicaciones. Siendo nuestra principal área de referencia los sistemas de Radiocomunicación y Redes de Banda Ancha.</p>
+            <p class="mt-2 text-lg black">Somos distribuidores de las principales marcas de radiocomunicaciones analógicas, digitales y TETRA como Kenwood, Hytera, Motorola y Sepura, siendo servicio técnico oficial en Canarias de Kenwood Communications desde 1978 y de Hytera y Sepura desde 2014 y 2009.</p>
             <div class="mt-5">
                 <div class="flex flex-row">
                     <div class="basis-11">
