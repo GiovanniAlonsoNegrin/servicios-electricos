@@ -10,25 +10,33 @@
                         </div>
                     </div>
                     <div class="basis-1/2 ml-4 lg:ml-0 mt-4 lg:mt-0">
-                        <h3 class="focus:outline-none focus:underline  text-sm lg:text-xl leading-none hover:text-brand dark:hover:text-brand text-white dark:text-gray-50 font-semibold underline">PÁGINAS</h3>
-                        <ul>
-                            <li class="mt-6"><a class="focus:outline-none focus:underline text-sm lg:text-base leading-none hover:text-brand hover:text-white text-gray-300" href="{{ route('frontend.index') }}">Inicio</a></li>
-                            <li class="mt-6"><a class="focus:outline-none focus:underline text-sm lg:text-base leading-none hover:text-brand hover:text-white text-gray-300" href="{{ route('frontend.about') }}">Conócenos</a></li>
-                            <li class="mt-6"><a class="focus:outline-none focus:underline text-sm lg:text-base leading-none hover:text-brand hover:text-white text-gray-300" href="{{ route('frontend.services') }}">Servicios</a></li>
-                            <li class="mt-6"><a class="focus:outline-none focus:underline text-sm lg:text-base leading-none hover:text-brand hover:text-white text-gray-300" href="{{ route('frontend.contact') }}">Contacto</a></li>
-                        </ul>
+                        <div class="lg:ml-10">
+                            <h3 class="focus:outline-none focus:underline  text-sm lg:text-xl leading-none hover:text-brand dark:hover:text-brand text-white dark:text-gray-50 font-semibold underline">PÁGINAS</h3>
+                            <ul>
+                                <li class="mt-6"><a class="focus:outline-none focus:underline text-sm lg:text-base leading-none hover:text-brand hover:text-white text-gray-300" href="{{ route('frontend.index') }}">Inicio</a></li>
+                                <li class="mt-6"><a class="focus:outline-none focus:underline text-sm lg:text-base leading-none hover:text-brand hover:text-white text-gray-300" href="{{ route('frontend.about') }}">Conócenos</a></li>
+                                <li class="mt-6"><a class="focus:outline-none focus:underline text-sm lg:text-base leading-none hover:text-brand hover:text-white text-gray-300" href="{{ route('frontend.services') }}">Servicios</a></li>
+                                <li class="mt-6"><a class="focus:outline-none focus:underline text-sm lg:text-base leading-none hover:text-brand hover:text-white text-gray-300" href="{{ route('frontend.contact') }}">Contacto</a></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="basis-1/2 ml-4 lg:ml-0 mt-4 lg:mt-0">
                         <h3 class="focus:outline-none focus:underline text-sm lg:text-xl leading-none hover:text-brand dark:hover:text-brand text-white dark:text-gray-50 font-semibold underline">INFORMACIÓN DE CONTACTO</h3>
                         <ul>
                             <li class="mt-6">
                                 <div>
-                                    <p class="text-white text-base ml-7 mt-1">Dirección</p>
-                                    <i class="fas fa-map-marker-alt text-white float-left fa-lg mr-3 mt-3"></i>
+                                    <p class="text-white text-base ml-7 mt-1 cursor-default">Direcciones:</p>
+                                    <i class="fas fa-map-marker-alt text-white float-left fa-lg mr-3 mt-5"></i>
                                     <div class="ml-7">
-                                        <addresss>
-                                            <a class="focus:outline-none focus:underline text-sm lg:text-base leading-none hover:text-brand hover:text-white text-gray-300" href="https://goo.gl/maps/zHnGbhXKxpqaW8Bn8">C/ Sucre, 22 - Bajo Izqda, CP 35008 Las Palmas</a> <span class="text-sm lg:text-base text-gray-300">/</span>
-                                            <a class="focus:outline-none focus:underline text-sm lg:text-base leading-none hover:text-brand hover:text-white text-gray-300" href="https://goo.gl/maps/zHnGbhXKxpqaW8Bn8">Ctra. de Valle Tabares, 23 - Local D, CP 38320 La Laguna</a>
+                                        <addresss class="cursor-default">
+                                            <div>
+{{--                                                <a class="focus:outline-none focus:underline text-sm lg:text-base leading-none hover:text-brand hover:text-white text-gray-300" href="javascript:void(0)">C/ Sucre, 22 - Bajo Izqda, CP 35008 Las Palmas</a>--}}
+                                                <p class="focus:outline-none focus:underline text-sm lg:text-base leading-none text-gray-300" href="javascript:void(0)">C/ Sucre, 22 - Bajo Izqda, CP 35008 Las Palmas</p>
+                                            </div>
+                                            <div class="mt-2">
+{{--                                                <a class="focus:outline-none focus:underline text-sm lg:text-base leading-none hover:text-brand hover:text-white text-gray-300" href="javascript:void(0)">Ctra. de Valle Tabares, 23 - Local D, CP 38320 La Laguna</a>--}}
+                                                <p class="focus:outline-none focus:underline text-sm lg:text-base leading-none text-gray-300">Ctra. de Valle Tabares, 23 - Local D, CP 38320 La Laguna</p>
+                                            </div>
                                         </addresss>
                                     </div>
                                 </div>
@@ -36,8 +44,8 @@
                             <li class="mt-6">
                                 <i class="fas fa-phone-alt text-white float-left mt-1 fa-lg mr-3"></i>
                                 <div class="ml-7">
-                                    <a class="focus:outline-none focus:underline text-sm lg:text-base leading-none hover:text-brand hover:text-white text-gray-300" href="tel:+34928248150">+34 928 248 150</a> <span class="text-sm lg:text-base text-gray-300">/</span>
-                                    <a class="focus:outline-none focus:underline text-sm lg:text-base leading-none hover:text-brand hover:text-white text-gray-300" href="tel:+34922648580">+34 922 648 580</a>
+                                    <a class="focus:outline-none focus:underline text-sm lg:text-base leading-none hover:text-brand hover:text-white text-gray-300" href="tel:+34928248150">+34 928 248 150</a>
+                                    <a class="focus:outline-none focus:underline text-sm lg:text-base leading-none hover:text-brand hover:text-white text-gray-300 mt-30" href="tel:+34922648580">+34 922 648 580</a>
                                 </div>
                             </li>
                             <li class="mt-6">

@@ -1,4 +1,4 @@
-<nav class="bg-sky-100">
+<nav id="navBar" class="bg-sky-100 w-full">
     <div class="max-w-7xl mx-auto px-2 py-4 sm:px-6 lg:px-8">
         <div class="relative flex items-center justify-between h-16">
             <!-- Mobile menu button-->

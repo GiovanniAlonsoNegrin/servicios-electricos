@@ -30,6 +30,7 @@ class Contact extends Component
         $email['recipients'] = 'giovannialonsonegrin@gmail.com';
         $email['subject']    = 'Contacto vía web | servicios eléctricos';
         $email['data']       = $this;
+        $email['name']       = 'Giovanni';
         $email['view']       = 'emails.contact';
         $email['archive']    = null;
         // Emitimos el correo

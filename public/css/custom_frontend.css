@@ -13,6 +13,13 @@
     height: 40rem;
 }
 
+.myAboutBackground{
+    background-image: url("../img/fondo_about.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
 .myServicesBackground{
     background-image: url("../img/servicios/services_background.jpg");
     background-size: cover;
@@ -24,8 +31,18 @@
     width: 30rem;
 }
 
+.myUl li:before {
+    content: '\2022 ';
+    color: red;
+    padding-right: 0.5rem;
+}
+
 .myColor{
     color: #2B79E6;
+}
+
+.myBackgroundColor{
+    background-color: #2B79E6;
 }
 
 .mySecondHeight{
@@ -73,7 +90,9 @@
 }
 
 .myContactIcons{
-    left: 8.5rem;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 .myFooterBackground{
@@ -98,6 +117,12 @@
     }
 }
 
+@media (max-width: 769px){
+    .mySecondHeight{
+        height: 80rem;
+    }
+}
+
 @media (max-width: 450px){
     .myHeight{
         height: 20rem;
@@ -105,10 +130,6 @@
 
     .mySecondHeight{
         height: max-content;
-    }
-
-    .myContactIcons{
-        left: 7.3rem;
     }
 
     .myContactMapsDiv{
@@ -121,18 +142,7 @@
 }
 
 @media (max-width: 320px){
-    .myContactIcons{
-        left: 4.5rem;
-    }
-
     .myFooterLogo{
         width: 16.3rem;
-    }
-}
-
-
-@media (max-width: 280px){
-    .myContactIcons{
-        left: 3.3rem;
     }
 }

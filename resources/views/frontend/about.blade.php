@@ -8,7 +8,7 @@
 </div>
 <!-- End button -->
 <!-- Start Section -->
-<div class="myBackground myHeight">
+<div class="myAboutBackground myHeight">
     <div class="max-w-7xl mx-auto px-2 py-1 lg:py-4 sm:px-6 lg:px-8">
         <div class="w-full lg:w-full mt-4 lg:mt-10 text-center">
             <p class="text-white px-2 lg:pl-4 lg:pr-6 mt-32 lg:mt-64 text-5xl lg:text-7xl">Sobre Nosotros</p>
@@ -33,7 +33,7 @@
                         <i class="fas fa-check myColor"></i>
                     </div>
                     <div class="basis-1/2">
-                        <p class="text-gray-900 cursor-default">Resolución de problemas complejos</p>
+                        <p class="text-black cursor-default">Resolución de problemas complejos</p>
                     </div>
                 </div>
                 <div class="flex flex-row mt-2">
@@ -41,7 +41,7 @@
                         <i class="fas fa-check myColor"></i>
                     </div>
                     <div class="basis-1/2">
-                        <p class="text-gray-900 cursor-default">Garantizamos un servicio de confianza</p>
+                        <p class="text-black cursor-default">Garantizamos un servicio de confianza</p>
                     </div>
                 </div>
                 <div class="flex flex-row mt-2">
@@ -49,7 +49,7 @@
                         <i class="fas fa-check myColor"></i>
                     </div>
                     <div class="basis-1/2">
-                        <p class="text-gray-900 cursor-default">Expertos en campos tecnologicos</p>
+                        <p class="text-black cursor-default">Expertos en campos tecnologicos</p>
                     </div>
                 </div>
             </div>
@@ -59,28 +59,28 @@
 <!-- End Initial Section -->
 <!-- Years Section -->
 <div class="max-w-7xl mx-auto px-2 py-1 lg:py-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 lg:grid-cols-2">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
         <div class="mb-24">
             <h1 class="text-9xl font-bold myColor">40 +</h1>
-            <p class="text-lg lg:text-3xl font-thin text-gray-900">Años de experiencia</p>
-            <p class="text-xl lg:text-4xl mt-10 text-gray-900">Realizamos los mejores <a class="myColor hover:underline" href="{{ route('frontend.services') }}">servicios de TI</a> que prometen su éxito</p>
+            <p class="text-lg lg:text-3xl text-black">Años de experiencia</p>
+            <p class="text-xl lg:text-3xl mt-10 text-black">Realizamos los mejores <a class="myColor hover:underline" href="{{ route('frontend.services') }}">servicios de TI</a> que prometen su éxito</p>
         </div>
         <div class="mb-10">
             <h1 class="text-lg lg:text-3xl">Acelere la innovación con el mejor equipo tecnológico, lo conectaremos con la mejor tecnología</h1>
             <div class="mt-6">
-                <p class="text-gray-900">Gestión de TI</p>
+                <p class="text-black">Gestión de TI</p>
                 <div class="percent">
                     <div style="width: 80%"></div>
                 </div>
             </div>
             <div class="mt-6">
-                <p class="text-gray-900">Seguridad de datos</p>
+                <p class="text-black">Seguridad de datos</p>
                 <div class="percent">
                     <div style="width: 90%"></div>
                 </div>
             </div>
             <div class="mt-6">
-                <p class="text-gray-900">Soluciones de TI</p>
+                <p class="text-black">Soluciones de TI</p>
                 <div class="percent">
                     <div style="width: 90%"></div>
                 </div>

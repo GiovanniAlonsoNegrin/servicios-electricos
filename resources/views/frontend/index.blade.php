@@ -20,7 +20,7 @@
             </div>
         </div>
         <div class="lg:w-1/3 float-right">
-            <div class="w-full lg:w-full mt-10 lg:mt-40 mr-9 lg:mr-0">
+            <div class="w-full lg:w-full mt-10 lg:mt-40 mr-9 lg:mr-0 mx-auto">
                 <img id="isos" class="w-80 opacity-0" src="{{ asset('img/isos.png') }}" alt="logo">
             </div>
         </div>
@@ -37,7 +37,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
                 <div id="boxTwo" class="mt-10 rounded">
                     <div class="w-full">
-                        <img id="boxTwo" class="object-cover rounded myServicesImgWidth mt-20 2xl:mt-12" src="{{ asset('img/servicios/servicios.png') }}" alt="servicios">
+                        <img id="boxTwo" class="object-cover rounded myServicesImgWidth mx-auto mt-20 2xl:mt-12" src="{{ asset('img/servicios/servicios.png') }}" alt="servicios">
                     </div>
                 </div>
                 <div id="boxOne" class="mt-10 rounded col-span-2">
@@ -95,16 +95,16 @@
         </a>
     </div>
 </div>
-<!-- End ection services -->
+<!-- End Section services -->
 <!-- Section brands -->
 <div class="py-5">
     <div class="max-w-7xl mx-auto px-2 py-1 lg:py-4 sm:px-6 lg:px-8">
         <div class="w-full h-10 flex items-center justify-center">
-            <h1 class="text-gray-900 text-lg lg:text-4xl font-semibold">Usamos las mejores marcas</h1>
+            <h1 class="text-gray-900 text-lg lg:text-4xl font-semibold">Trabajamos con las mejores marcas</h1>
         </div>
-        <div class="grid grid-cols-1 lg:grid-cols-4 gap-4 lg:gap-0 items-center justify-center justify-items-center mt-9">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-10 lg:gap-0 items-center justify-center justify-items-center mt-9">
             <div>
-                <a href="https://www.kenwood.es/">
+                <a href="https://www.kenwood.es/" target="_blank">
                     <img src="{{ asset('img/marcas/kenwood_logo.png') }}"
                          class="w-40"
                          loading="lazy"
@@ -112,7 +112,7 @@
                 </a>
             </div>
             <div>
-                <a href="https://www.motorola.es/">
+                <a href="https://www.motorola.es/" target="_blank">
                     <img src="{{ asset('img/marcas/motorola_logo.png') }}"
                          class="w-40"
                          loading="lazy"
@@ -120,7 +120,7 @@
                 </a>
             </div>
             <div>
-                <a href="https://www.teltronic.es/">
+                <a href="https://www.teltronic.es/" target="_blank">
                     <img src="{{ asset('img/marcas/teltronic_logo.png') }}"
                          class="w-40 mt-6 lg:mt-0"
                          loading="lazy"
@@ -128,7 +128,7 @@
                 </a>
             </div>
             <div>
-                <a href="https://www.hytera.com/">
+                <a href="https://www.hytera.com/" target="_blank">
                     <img src="{{ asset('img/marcas/hytera_logo.png') }}"
                          class="w-40 mt-6 lg:mt-0"
                          loading="lazy"
@@ -136,9 +136,9 @@
                 </a>
             </div>
         </div>
-        <div class="grid grid-cols-1 gap-4 lg:gap-0 lg:grid-cols-3 items-center justify-center justify-items-center mt-9">
+        <div class="grid grid-cols-1 gap-10 lg:gap-4 lg:gap-0 md:grid-cols-3 items-center justify-center justify-items-center mt-14 lg:mt-9">
             <div>
-                <a href="https://www.sepura.com/">
+                <a href="https://www.sepura.com/" target="_blank">
                     <img src="{{ asset('img/marcas/sepura_logo.png') }}"
                          class="w-40 mt-6 lg:mt-0"
                          loading="lazy"
@@ -146,7 +146,7 @@
                 </a>
             </div>
             <div>
-                <a href="https://www.fiplex.com/es/">
+                <a href="https://www.fiplex.com/es/" target="_blank">
                     <img src="{{ asset('img/marcas/logo_flipex.png') }}"
                          class="w-40 mt-6 lg:mt-0"
                          loading="lazy"
@@ -154,7 +154,7 @@
                 </a>
             </div>
             <div>
-                <a href="https://www.davidclarkcompany.com/">
+                <a href="https://www.davidclarkcompany.com/" target="_blank">
                     <img src="{{ asset('img/marcas/david_clark_logo.png') }}"
                          class="w-40 mt-6 lg:mt-0"
                          loading="lazy"

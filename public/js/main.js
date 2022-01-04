@@ -16,7 +16,16 @@ $( document ).ready(function() {
         }, 2000);
     })
     //END BUTTON SCROLL SECTION
-
+    //NAV BAR STICKY SECTION
+    // $(window).scroll(function() {
+    //     let scroll = $(window).scrollTop();
+    //     if(scroll >= 90) {
+    //         $('#navBar').addClass('sticky top-0');
+    //     } else {
+    //         $('#navBar').removeClass('sticky top-0');
+    //     }
+    // });
+    //END NAVBAR SECTION
     //MENU SECTION
     //normal menu
     $('#profileButton').on('click', function (){

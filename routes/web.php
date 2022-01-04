@@ -26,6 +26,14 @@ Route::group(['as' => 'frontend.', 'namespace' => 'Frontend'], function() {
    Route::get('/sobre-nosotros', 'GeneralController@about')->name('about');
    Route::get('/servicios', 'GeneralController@services')->name('services');
    Route::get('/contacto', 'GeneralController@contact')->name('contact');
+//   Route::get('/email', function (){
+//       $correo['recipients']    = 'gio@e.es';
+//       $correo['subject']       = 'Consultoría - Intur Consulting';
+//       $correo['data']          = 'Prueba';
+//       $correo['view']          = 'emails.contact';
+//       $correo['archive']       = null;
+//       return (new App\Mail\GeneralMail($correo))->render();
+//   })->name('email');
 });
 
 Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'middleware' => ['auth']], function() {
