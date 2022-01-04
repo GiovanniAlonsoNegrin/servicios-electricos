@@ -173,7 +173,6 @@
                     <li>- Conexión con el <span class="font-bold">CECOES 112</span>.</li>
                 </ul>
             </div>
-
         </div>
     </div>
 </div>
