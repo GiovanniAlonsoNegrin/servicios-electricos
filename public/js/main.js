@@ -49,6 +49,17 @@ $( document ).ready(function() {
             $('#mobile-menu').addClass('hidden');
         }
     })
+    //languague menu
+    $('#langMenuButton').on('click', function(){
+        $('#langMenu').removeClass('hidden');
+    });
+    $( document ).on('click', function (e){
+        let menu = $('#langMenuButton');
+
+        if (!menu.is(e.target) && menu.has(e.target).length === 0){
+            $('#langMenu').addClass('hidden');
+        }
+    })
     //END MENU SECTION
 
     //START SECTION

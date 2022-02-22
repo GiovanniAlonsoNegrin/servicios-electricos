@@ -1,0 +1,20 @@
+<?php
+return [
+    'home_title'                     => 'Servicios Eléctricos sl, especialistas en sistemas de comunicación para los servicios de seguridad y atención de emergencias.',
+    'home_subtitle'                  => 'Desde 1978.',
+    'home_button'                    => 'Conócenos',
+    'home_service_question'          => '¿Por qué elegirnos?',
+    'home_service_title'             => 'Brindamos soluciones de TI verdaderamente destacadas para su éxito',
+    'home_service_expert_title'      => 'Un Equipo Experto',
+    'home_service_expert_msg'        => 'Acelere la innovación con el mejor equipo tecnológico.',
+    'home_service_control_title'     => 'Control de calidad',
+    'home_service_control_msg'       => 'Contamos con certificaciones de calidad ISO.',
+    'home_service_integration_title' => 'Integración',
+    'home_service_integration_msg'   => 'Siempre a la última, actualizados y al día.',
+    'home_service_support_title'     => 'Soporte',
+    'home_service_support_msg'       => 'Contamos con la mejor atención al cliente.',
+    'home_service_msg1'              => 'Esto es solo un vistazo, vea',
+    'home_service_msg2'              => 'todas las características',
+    'home_service_msg3'              => 'de nuestro servicio.',
+    'home_service_brands'            => 'Trabajamos con las mejores marcas',
+];

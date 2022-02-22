@@ -1,0 +1,20 @@
+<?php
+return [
+    'home_title'                     => 'Servicios Eléctricos sl, specialists in communication systems for security and emergency services.',
+    'home_subtitle'                  => 'Since 1978.',
+    'home_button'                    => 'know us',
+    'home_service_question'          => 'Why choose us?',
+    'home_service_title'             => 'We provide truly outstanding IT solutions for your success',
+    'home_service_expert_title'      => 'An Expert Team',
+    'home_service_expert_msg'        => 'Accelerate innovation with the best technology team.',
+    'home_service_control_title'     => 'Quality control',
+    'home_service_control_msg'       => 'We have ISO quality certifications.',
+    'home_service_integration_title' => 'Integration',
+    'home_service_integration_msg'   => 'Always up to date, updated and up to date.',
+    'home_service_support_title'     => 'Support',
+    'home_service_support_msg'       => 'We have the best customer service.',
+    'home_service_msg1'              => 'This is just a glimpse, see ',
+    'home_service_msg2'              => 'all features',
+    'home_service_msg3'              => 'of our service.',
+    'home_service_brands'            => 'We work with the best brands',
+];

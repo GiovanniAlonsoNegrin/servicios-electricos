@@ -31,7 +31,7 @@
             <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 {{-- logotipo --}}
                 <a href="{{ route('frontend.index') }}" class="flex-shrink-0 flex items-center">
-                    <img class="block lg:hidden h-12 w-50 ml-10" src="{{ asset('img/logo_mediano_sin_fondo.png') }}" alt="Servicio electricos">
+                    <img class="block lg:hidden h-10 w-40 mr-2" src="{{ asset('img/logo_mediano_sin_fondo.png') }}" alt="Servicio electricos">
                     <img class="hidden lg:block h-14 w-64" src="{{ asset('img/logo_mediano_sin_fondo.png') }}" alt="Servicios electricos">
                 </a>
                 {{-- menu lg --}}
@@ -39,37 +39,56 @@
                     <div class="flex space-x-4 mt-2">
                         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                         <div>
-                            <a href="{{ route('frontend.index') }}" class="{{ request()->routeIs('frontend.index') ? 'text-sky-900' : 'text-gary-900' }} hover:text-sky-900 px-3 py-2 rounded-md text-lg font-medium" aria-current="page">Inicio</a>
+                            <a href="{{ route('frontend.index', [], true, app()->getLocale()) }}" class="{{ request()->routeIs('frontend.index') ? 'text-sky-900' : 'text-gary-900' }} hover:text-sky-900 px-3 py-2 rounded-md text-lg font-medium" aria-current="page">@lang('nav.home')</a>
                             @if(request()->routeIs('frontend.index'))
                                 <div class="w-100 h-0.5 bg-sky-900"></div>
                             @endif
                         </div>
 
                         <div>
-                            <a href="{{ route('frontend.about') }}" class="{{ request()->routeIs('frontend.about') ? 'text-sky-900' : 'text-gray-900' }}  hover:text-sky-900 px-3 py-2 rounded-md text-lg font-medium">Conócenos</a>
+                            <a href="{{ route('frontend.about', [], true, app()->getLocale()) }}" class="{{ request()->routeIs('frontend.about') ? 'text-sky-900' : 'text-gray-900' }}  hover:text-sky-900 px-3 py-2 rounded-md text-lg font-medium">@lang('nav.about')</a>
                             @if(request()->routeIs('frontend.about'))
                                 <div class="w-100 h-0.5 bg-sky-900"></div>
                             @endif
                         </div>
 
                         <div>
-                            <a href="{{ route('frontend.services') }}" class="{{ request()->routeIs('frontend.services') ? 'text-sky-900' : 'text-gray-900' }}  hover:text-sky-900 px-3 py-2 rounded-md text-lg font-medium">Servicios</a>
-                            @if(request()->routeIs('frontend.services'))
-                                <div class="w-100 h-0.5 bg-sky-900"></div>
-                            @endif
+                            <a href="{{ route('frontend.services', [], true, app()->getLocale()) }}" class="  hover:text-sky-900 px-3 py-2 rounded-md text-lg font-medium">@lang('nav.services')</a>
+{{--                            @if(request()->routeIs('frontend.services'))--}}
+{{--                                <div class="w-100 h-0.5 bg-sky-900"></div>--}}
+{{--                            @endif--}}
                         </div>
 
                         <div>
-                            <a href="{{ route('frontend.contact') }}" class="{{ request()->routeIs('frontend.contact') ? 'text-sky-900' : 'text-gray-900' }}  hover:text-sky-900 px-3 py-2 rounded-md text-lg font-medium">Contacto</a>
+                            <a href="{{ route('frontend.contact', [], true, app()->getLocale()) }}" class="{{ request()->routeIs('frontend.contact') ? 'text-sky-900' : 'text-gray-900' }}  hover:text-sky-900 px-3 py-2 rounded-md text-lg font-medium">@lang('nav.contact')</a>
                             @if(request()->routeIs('frontend.contact'))
                                 <div class="w-100 h-0.5 bg-sky-900"></div>
                             @endif
                         </div>
 
-
                     </div>
                 </div>
             </div>
+            <!-- Language menu -->
+            <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                <div class="relative inline-block text-left">
+                    <div>
+                        <button type="button" class="inline-flex justify-center w-full text-sm font-medium text-gray-700 hover:text-sky-900 focus:outline-none" id="langMenuButton" aria-expanded="true" aria-haspopup="true">
+                            @lang('nav.language')
+                            <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="langMenu" class="hidden origin-top-right absolute -right-1 mt-2 w-24 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                        <div role="none">
+                            <a href="{{ route(\Request::route()->getName(), request()->route()->parameters(), true, 'es') }}" class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 rounded-t-md" role="menuitem" tabindex="-1" id="menu-item-0">Español</a>
+                            <a href="{{ route(\Request::route()->getName(), request()->route()->parameters(), true, 'en') }}" class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 rounded-b-md" role="menuitem" tabindex="-1" id="menu-item-1">Inglés</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Language menu -->
             @auth
                 <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 {{--                <button type="button" class="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">--}}
@@ -124,22 +143,22 @@
     <div class="sm:hidden hidden" id="mobile-menu">
         <div class="px-2 pt-2 pb-3 space-y-1">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-            <a href="{{ route('frontend.index') }}" class="{{ request()->routeIs('frontend.index') ? 'text-sky-900 text-white' : 'text-gray-900' }}  block px-3 py-2 rounded-md text-lg font-medium" aria-current="page">Inicio</a>
+            <a href="{{ route('frontend.index', [], true, app()->getLocale()) }}" class="{{ request()->routeIs('frontend.index') ? 'text-sky-900 text-white' : 'text-gray-900' }}  block px-3 py-2 rounded-md text-lg font-medium" aria-current="page">{{__('nav.home')}}</a>
             @if(request()->routeIs('frontend.index'))
                 <div class="w-16 ml-1 h-0.5 bg-sky-900"></div>
             @endif
 
-            <a href="{{ route('frontend.about') }}" class="{{ request()->routeIs('frontend.about') ? 'text-sky-900 text-white' : 'text-gray-900' }} block px-3 py-2 rounded-md text-lg font-medium">Conócenos</a>
+            <a href="{{ route('frontend.about', [], true, app()->getLocale()) }}" class="{{ request()->routeIs('frontend.about') ? 'text-sky-900 text-white' : 'text-gray-900' }} block px-3 py-2 rounded-md text-lg font-medium">{{__('nav.about')}}</a>
             @if(request()->routeIs('frontend.about'))
                 <div class="w-28 ml-1 h-0.5 bg-sky-900"></div>
             @endif
 
-            <a href="{{ route('frontend.services') }}" class="{{ request()->routeIs('frontend.services') ? 'text-sky-900 text-white' : 'text-gray-900' }} block px-3 py-2 rounded-md text-lg font-medium">Servicios</a>
+            <a href="{{ route('frontend.services', [], true, app()->getLocale()) }}" class="{{ request()->routeIs('frontend.services') ? 'text-sky-900 text-white' : 'text-gray-900' }} block px-3 py-2 rounded-md text-lg font-medium">{{__('nav.services')}}</a>
             @if(request()->routeIs('frontend.services'))
                 <div class="w-24 ml-1 h-0.5 bg-sky-900"></div>
             @endif
 
-            <a href="{{ route('frontend.contact') }}" class="{{ request()->routeIs('frontend.contact') ? 'text-sky-900 text-white' : 'text-gray-900' }} block px-3 py-2 rounded-md text-lg font-medium">Contacto</a>
+            <a href="{{ route('frontend.contact', [], true, app()->getLocale()) }}" class="{{ request()->routeIs('frontend.contact') ? 'text-sky-900 text-white' : 'text-gray-900' }} block px-3 py-2 rounded-md text-lg font-medium">{{__('nav.contact')}}</a>
             @if(request()->routeIs('frontend.contact'))
                 <div class="w-24 ml-1 h-0.5 bg-sky-900"></div>
             @endif
@@ -147,4 +166,3 @@
         </div>
     </div>
 </nav>
-

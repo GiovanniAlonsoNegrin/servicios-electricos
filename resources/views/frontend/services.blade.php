@@ -1,4 +1,7 @@
 @extends('frontend.master')
+
+@section('title', 'Servicios')
+
 @section('body')
 <!-- Button -->
 <div id="scrollButton" class="hidden mr-2 bg-sky-700 hover:bg-sky-600 bottom-10 right-0 h-12 lg:h-16 w-12 lg:w-16 fixed z-50 lg:rounded-full border-2 border-sky-800 cursor-pointer">

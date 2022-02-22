@@ -14,11 +14,23 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        User::create([
-            'name' => 'Admin',
-            'email' => 'admin@admin.com',
-            'password' => bcrypt('password')
-        ]);
+//        User::create([
+//            'name' => 'Admin',
+//            'email' => 'admin@admin.com',
+//            'password' => bcrypt('password')
+//        ]);
+
+        $users = [
+            [
+                'id'             => 1,
+                'name'           => 'Admin',
+                'email'          => 'admin@admin.com',
+                'password'       => bcrypt('password'),
+                'remember_token' => null,
+            ],
+        ];
+
+        User::insert($users);
 
     }
 }

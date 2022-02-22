@@ -11,14 +11,15 @@
     <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('img/icono.png') }}">
-    <title>Servicios Eléctricos</title>
+    <title>@yield('title') | Servicios Eléctricos SL</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="stylesheet" href="{{ asset('css/custom_frontend.css') }}">
 
-    @section('css')@show
-    @stack('css')
     @livewireStyles
+    @section('css')@show
+    {{-- Leer css de livewire --}}
+    @stack('css')
 
 </head>
 <body>
