@@ -9,6 +9,7 @@ Route::localized(function ($locale) {
         Route::get('/sobre-nosotros', 'GeneralController@about')->name('about');
         Route::get('/servicios', 'GeneralController@services')->name('services');
         Route::get('/contacto', 'GeneralController@contact')->name('contact');
+        Route::get('/politica-privacidad', 'GeneralController@policy')->name('policy');
     });
 });
 

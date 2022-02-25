@@ -106,6 +106,22 @@
     background-color: #002145;
 }
 
+.myPolicyListUl{
+    padding: 0;
+    margin-left: 20px;
+}
+
+.myPolicyListUl li{
+    margin-bottom: 10px;
+}
+
+.myPolicyListLi::before{
+    content: "\2022";
+    padding-right: 10px;
+    margin-left: -20px;
+    color: #8ac4d9;
+}
+
 @keyframes opacity {
     0% {
         /*opacity: 0;*/
